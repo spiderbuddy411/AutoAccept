@@ -1,0 +1,14 @@
+C:\Users\Stigma\Desktop\LCUTool\LCUTool\obj\Release\LCUTool.MainForm.resources
+C:\Users\Stigma\Desktop\LCUTool\LCUTool\obj\Release\LCUTool.Properties.Resources.resources
+C:\Users\Stigma\Desktop\LCUTool\LCUTool\obj\Release\LCUTool.csproj.GenerateResource.cache
+C:\Users\Stigma\Desktop\LCUTool\LCUTool\obj\Release\LCUTool.csproj.CoreCompileInputs.cache
+C:\Users\Stigma\Desktop\LCUTool\LCUTool\obj\Release\LCUTool.exe
+C:\Users\Stigma\Desktop\LCUTool\LCUTool\obj\Release\LCUTool.pdb
+C:\Users\Stigma\Desktop\LCUTool\LCUTool\bin\Release\LCUTool.exe.config
+C:\Users\Stigma\Desktop\LCUTool\LCUTool\bin\Release\LCUTool.exe
+C:\Users\Stigma\Desktop\LCUTool\LCUTool\bin\Release\LCUTool.pdb
+C:\Users\Stigma\Desktop\LCUTool\LCUTool\bin\Release\Newtonsoft.Json.xml
+C:\Users\Stigma\Desktop\LCUTool\LCUTool\bin\Release\RestSharp.xml
+C:\Users\Stigma\Desktop\LCUTool\LCUTool\obj\Release\LCUTool.csprojAssemblyReference.cache
+C:\Users\Stigma\Desktop\LCUTool\LCUTool\obj\Release\LCUTool.csproj.Fody.CopyLocal.cache
+C:\Users\Stigma\Desktop\LCUTool\LCUTool\obj\Release\LCUTool.csproj.CopyComplete
