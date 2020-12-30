@@ -17,11 +17,9 @@ using Newtonsoft.Json;
 using ClassicDarkTheme.Dark;
 using System.Diagnostics;
 
-/*
- LCUTool coded by Lufzys https://github.com/Lufzys
- */
 
-namespace LCUTool // https://lcu.vivide.re // Need RestSharp & Newtonsoft.Json & Costura.Fody
+
+namespace LCUTool
 {
     public partial class MainForm : Form
     {
