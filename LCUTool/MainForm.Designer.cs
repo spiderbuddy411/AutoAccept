@@ -33,6 +33,7 @@
             this.LCUTimer = new System.Windows.Forms.Timer(this.components);
             this.AutoUpdate = new System.Windows.Forms.Timer(this.components);
             this.plMain = new ClassicDarkTheme.Dark.DarkPanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblMinimaze = new ClassicDarkTheme.Dark.DarkLabel();
             this.lblClose = new ClassicDarkTheme.Dark.DarkLabel();
             this.lblBlueEssence = new ClassicDarkTheme.Dark.DarkLabel();
@@ -40,12 +41,8 @@
             this.pbBlueEssence = new System.Windows.Forms.PictureBox();
             this.pbRP = new System.Windows.Forms.PictureBox();
             this.lblLevelText = new ClassicDarkTheme.Dark.DarkLabel();
-            this.btnAramSkinBoost = new ClassicDarkTheme.Dark.DarkButton();
             this.ChangeProfileIcon = new ClassicDarkTheme.Dark.DarkButton();
             this.tbProfileIcon = new AmongUsExternal.DarkTextbox();
-            this.pbSeperator = new System.Windows.Forms.PictureBox();
-            this.cbAutoAramSkinBoost = new ClassicDarkTheme.Dark.DarkCheckbox();
-            this.lblAutoAramSkinBoost = new ClassicDarkTheme.Dark.DarkLabel();
             this.cbAutoAccept = new ClassicDarkTheme.Dark.DarkCheckbox();
             this.lblAutoAccept = new ClassicDarkTheme.Dark.DarkLabel();
             this.pbLevelProgress = new ClassicDarkTheme.Dark.DarkProgressbar();
@@ -53,11 +50,9 @@
             this.lblName = new ClassicDarkTheme.Dark.DarkLabel();
             this.pbAvatar = new ClassicDarkTheme.Dark.DarkPicturebox();
             this.dcAvatarCircle = new ClassicDarkTheme.Dark.DarkCircle();
-            this.label1 = new System.Windows.Forms.Label();
             this.plMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbBlueEssence)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRP)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSeperator)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAvatar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,6 +69,9 @@
             // 
             // plMain
             // 
+            this.plMain.AutoScroll = true;
+            this.plMain.AutoSize = true;
+            this.plMain.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.plMain.BorderThickness = 3F;
             this.plMain.Controls.Add(this.label1);
             this.plMain.Controls.Add(this.lblMinimaze);
@@ -83,12 +81,8 @@
             this.plMain.Controls.Add(this.pbBlueEssence);
             this.plMain.Controls.Add(this.pbRP);
             this.plMain.Controls.Add(this.lblLevelText);
-            this.plMain.Controls.Add(this.btnAramSkinBoost);
             this.plMain.Controls.Add(this.ChangeProfileIcon);
             this.plMain.Controls.Add(this.tbProfileIcon);
-            this.plMain.Controls.Add(this.pbSeperator);
-            this.plMain.Controls.Add(this.cbAutoAramSkinBoost);
-            this.plMain.Controls.Add(this.lblAutoAramSkinBoost);
             this.plMain.Controls.Add(this.cbAutoAccept);
             this.plMain.Controls.Add(this.lblAutoAccept);
             this.plMain.Controls.Add(this.pbLevelProgress);
@@ -103,9 +97,20 @@
             this.plMain.PanelBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(53)))));
             this.plMain.PanelBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(53)))));
             this.plMain.PanelTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(18)))), ((int)(((byte)(19)))));
-            this.plMain.Size = new System.Drawing.Size(559, 339);
+            this.plMain.Size = new System.Drawing.Size(435, 202);
             this.plMain.TabIndex = 0;
+            this.plMain.Paint += new System.Windows.Forms.PaintEventHandler(this.plMain_Paint);
             this.plMain.MouseDown += new System.Windows.Forms.MouseEventHandler(this.plMain_MouseDown);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(388, 186);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 13);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "Stigma";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblMinimaze
             // 
@@ -116,7 +121,7 @@
             this.lblMinimaze.ForeColor = System.Drawing.Color.White;
             this.lblMinimaze.IsLink = false;
             this.lblMinimaze.Link = "";
-            this.lblMinimaze.Location = new System.Drawing.Point(500, 12);
+            this.lblMinimaze.Location = new System.Drawing.Point(377, 12);
             this.lblMinimaze.Name = "lblMinimaze";
             this.lblMinimaze.Size = new System.Drawing.Size(22, 15);
             this.lblMinimaze.TabIndex = 19;
@@ -132,7 +137,7 @@
             this.lblClose.ForeColor = System.Drawing.Color.White;
             this.lblClose.IsLink = false;
             this.lblClose.Link = "";
-            this.lblClose.Location = new System.Drawing.Point(527, 12);
+            this.lblClose.Location = new System.Drawing.Point(405, 12);
             this.lblClose.Name = "lblClose";
             this.lblClose.Size = new System.Drawing.Size(22, 15);
             this.lblClose.TabIndex = 18;
@@ -147,7 +152,7 @@
             this.lblBlueEssence.ForeColor = System.Drawing.Color.White;
             this.lblBlueEssence.IsLink = false;
             this.lblBlueEssence.Link = "";
-            this.lblBlueEssence.Location = new System.Drawing.Point(54, 292);
+            this.lblBlueEssence.Location = new System.Drawing.Point(185, 117);
             this.lblBlueEssence.Name = "lblBlueEssence";
             this.lblBlueEssence.Size = new System.Drawing.Size(15, 16);
             this.lblBlueEssence.TabIndex = 17;
@@ -161,7 +166,7 @@
             this.lblRP.ForeColor = System.Drawing.Color.White;
             this.lblRP.IsLink = false;
             this.lblRP.Link = "";
-            this.lblRP.Location = new System.Drawing.Point(55, 255);
+            this.lblRP.Location = new System.Drawing.Point(185, 83);
             this.lblRP.Name = "lblRP";
             this.lblRP.Size = new System.Drawing.Size(15, 16);
             this.lblRP.TabIndex = 16;
@@ -171,7 +176,7 @@
             // 
             this.pbBlueEssence.BackColor = System.Drawing.Color.Transparent;
             this.pbBlueEssence.Image = ((System.Drawing.Image)(resources.GetObject("pbBlueEssence.Image")));
-            this.pbBlueEssence.Location = new System.Drawing.Point(20, 285);
+            this.pbBlueEssence.Location = new System.Drawing.Point(147, 104);
             this.pbBlueEssence.Name = "pbBlueEssence";
             this.pbBlueEssence.Size = new System.Drawing.Size(32, 32);
             this.pbBlueEssence.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -182,7 +187,7 @@
             // 
             this.pbRP.BackColor = System.Drawing.Color.Transparent;
             this.pbRP.Image = ((System.Drawing.Image)(resources.GetObject("pbRP.Image")));
-            this.pbRP.Location = new System.Drawing.Point(20, 247);
+            this.pbRP.Location = new System.Drawing.Point(147, 77);
             this.pbRP.Name = "pbRP";
             this.pbRP.Size = new System.Drawing.Size(32, 32);
             this.pbRP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -197,32 +202,12 @@
             this.lblLevelText.ForeColor = System.Drawing.Color.White;
             this.lblLevelText.IsLink = false;
             this.lblLevelText.Link = "";
-            this.lblLevelText.Location = new System.Drawing.Point(17, 180);
+            this.lblLevelText.Location = new System.Drawing.Point(12, 176);
             this.lblLevelText.Name = "lblLevelText";
             this.lblLevelText.Size = new System.Drawing.Size(54, 18);
             this.lblLevelText.TabIndex = 13;
             this.lblLevelText.Text = "Level : ";
-            // 
-            // btnAramSkinBoost
-            // 
-            this.btnAramSkinBoost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(30)))), ((int)(((byte)(33)))));
-            this.btnAramSkinBoost.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAramSkinBoost.FlatAppearance.BorderSize = 0;
-            this.btnAramSkinBoost.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAramSkinBoost.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.btnAramSkinBoost.ForeColor = System.Drawing.Color.White;
-            this.btnAramSkinBoost.Location = new System.Drawing.Point(157, 294);
-            this.btnAramSkinBoost.MouseBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(30)))), ((int)(((byte)(33)))));
-            this.btnAramSkinBoost.MouseDownColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(26)))));
-            this.btnAramSkinBoost.MouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(46)))));
-            this.btnAramSkinBoost.MouseLeaveColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(30)))), ((int)(((byte)(33)))));
-            this.btnAramSkinBoost.MouseUpColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(46)))));
-            this.btnAramSkinBoost.Name = "btnAramSkinBoost";
-            this.btnAramSkinBoost.Size = new System.Drawing.Size(118, 23);
-            this.btnAramSkinBoost.TabIndex = 12;
-            this.btnAramSkinBoost.Text = "Aram Skin Boost";
-            this.btnAramSkinBoost.UseVisualStyleBackColor = false;
-            this.btnAramSkinBoost.Click += new System.EventHandler(this.btnAramSkinBoost_Click);
+            this.lblLevelText.Click += new System.EventHandler(this.lblLevelText_Click);
             // 
             // ChangeProfileIcon
             // 
@@ -232,7 +217,7 @@
             this.ChangeProfileIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ChangeProfileIcon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
             this.ChangeProfileIcon.ForeColor = System.Drawing.Color.White;
-            this.ChangeProfileIcon.Location = new System.Drawing.Point(409, 294);
+            this.ChangeProfileIcon.Location = new System.Drawing.Point(248, 167);
             this.ChangeProfileIcon.MouseBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(30)))), ((int)(((byte)(33)))));
             this.ChangeProfileIcon.MouseDownColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(26)))));
             this.ChangeProfileIcon.MouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(46)))));
@@ -250,57 +235,13 @@
             this.tbProfileIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(39)))));
             this.tbProfileIcon.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.tbProfileIcon.ForeColor = System.Drawing.Color.White;
-            this.tbProfileIcon.Location = new System.Drawing.Point(409, 268);
+            this.tbProfileIcon.Location = new System.Drawing.Point(248, 141);
             this.tbProfileIcon.MaxLength = 32767;
             this.tbProfileIcon.Name = "tbProfileIcon";
             this.tbProfileIcon.OnlyNumbers = true;
             this.tbProfileIcon.Size = new System.Drawing.Size(134, 20);
             this.tbProfileIcon.TabIndex = 10;
             this.tbProfileIcon.TextStr = "";
-            // 
-            // pbSeperator
-            // 
-            this.pbSeperator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pbSeperator.Location = new System.Drawing.Point(148, 12);
-            this.pbSeperator.Name = "pbSeperator";
-            this.pbSeperator.Size = new System.Drawing.Size(3, 305);
-            this.pbSeperator.TabIndex = 9;
-            this.pbSeperator.TabStop = false;
-            // 
-            // cbAutoAramSkinBoost
-            // 
-            this.cbAutoAramSkinBoost.BackColor = System.Drawing.Color.Transparent;
-            this.cbAutoAramSkinBoost.BorderThickness = 3;
-            this.cbAutoAramSkinBoost.CheckboxBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(30)))), ((int)(((byte)(33)))));
-            this.cbAutoAramSkinBoost.CheckboxBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(53)))));
-            this.cbAutoAramSkinBoost.CheckboxDownColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(26)))));
-            this.cbAutoAramSkinBoost.CheckboxHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(46)))));
-            this.cbAutoAramSkinBoost.CheckboxLeaveColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(39)))));
-            this.cbAutoAramSkinBoost.CheckboxUpColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(46)))));
-            this.cbAutoAramSkinBoost.Checked = false;
-            this.cbAutoAramSkinBoost.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cbAutoAramSkinBoost.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.cbAutoAramSkinBoost.ForeColor = System.Drawing.Color.White;
-            this.cbAutoAramSkinBoost.Location = new System.Drawing.Point(157, 42);
-            this.cbAutoAramSkinBoost.Name = "cbAutoAramSkinBoost";
-            this.cbAutoAramSkinBoost.Size = new System.Drawing.Size(24, 24);
-            this.cbAutoAramSkinBoost.TabIndex = 7;
-            this.cbAutoAramSkinBoost.Type = ClassicDarkTheme.Dark.DarkCheckbox.Types.Circle;
-            this.cbAutoAramSkinBoost.CheckedChanged += new System.EventHandler(this.cbAutoAramSkinBoost_CheckedChanged);
-            // 
-            // lblAutoAramSkinBoost
-            // 
-            this.lblAutoAramSkinBoost.AutoSize = true;
-            this.lblAutoAramSkinBoost.BackColor = System.Drawing.Color.Transparent;
-            this.lblAutoAramSkinBoost.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.lblAutoAramSkinBoost.ForeColor = System.Drawing.Color.White;
-            this.lblAutoAramSkinBoost.IsLink = false;
-            this.lblAutoAramSkinBoost.Link = "";
-            this.lblAutoAramSkinBoost.Location = new System.Drawing.Point(185, 46);
-            this.lblAutoAramSkinBoost.Name = "lblAutoAramSkinBoost";
-            this.lblAutoAramSkinBoost.Size = new System.Drawing.Size(137, 16);
-            this.lblAutoAramSkinBoost.TabIndex = 8;
-            this.lblAutoAramSkinBoost.Text = "Auto Aram Skin Boost";
             // 
             // cbAutoAccept
             // 
@@ -316,9 +257,9 @@
             this.cbAutoAccept.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbAutoAccept.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
             this.cbAutoAccept.ForeColor = System.Drawing.Color.White;
-            this.cbAutoAccept.Location = new System.Drawing.Point(157, 12);
+            this.cbAutoAccept.Location = new System.Drawing.Point(144, 35);
             this.cbAutoAccept.Name = "cbAutoAccept";
-            this.cbAutoAccept.Size = new System.Drawing.Size(24, 24);
+            this.cbAutoAccept.Size = new System.Drawing.Size(25, 24);
             this.cbAutoAccept.TabIndex = 5;
             this.cbAutoAccept.Type = ClassicDarkTheme.Dark.DarkCheckbox.Types.Circle;
             this.cbAutoAccept.CheckedChanged += new System.EventHandler(this.cbAutoAccept_CheckedChanged);
@@ -331,7 +272,7 @@
             this.lblAutoAccept.ForeColor = System.Drawing.Color.White;
             this.lblAutoAccept.IsLink = false;
             this.lblAutoAccept.Link = "";
-            this.lblAutoAccept.Location = new System.Drawing.Point(185, 16);
+            this.lblAutoAccept.Location = new System.Drawing.Point(172, 39);
             this.lblAutoAccept.Name = "lblAutoAccept";
             this.lblAutoAccept.Size = new System.Drawing.Size(80, 16);
             this.lblAutoAccept.TabIndex = 6;
@@ -341,7 +282,7 @@
             // 
             this.pbLevelProgress.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(53)))));
             this.pbLevelProgress.BorderThickness = 3F;
-            this.pbLevelProgress.Location = new System.Drawing.Point(20, 218);
+            this.pbLevelProgress.Location = new System.Drawing.Point(104, 176);
             this.pbLevelProgress.Name = "pbLevelProgress";
             this.pbLevelProgress.ProgressBarBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(39)))));
             this.pbLevelProgress.ProgressBarLeftProgressColor = System.Drawing.Color.Aqua;
@@ -357,7 +298,7 @@
             this.lblLevel.ForeColor = System.Drawing.Color.White;
             this.lblLevel.IsLink = false;
             this.lblLevel.Link = "";
-            this.lblLevel.Location = new System.Drawing.Point(17, 200);
+            this.lblLevel.Location = new System.Drawing.Point(135, 160);
             this.lblLevel.Name = "lblLevel";
             this.lblLevel.Size = new System.Drawing.Size(44, 16);
             this.lblLevel.TabIndex = 3;
@@ -371,7 +312,7 @@
             this.lblName.ForeColor = System.Drawing.Color.White;
             this.lblName.IsLink = false;
             this.lblName.Link = "";
-            this.lblName.Location = new System.Drawing.Point(49, 145);
+            this.lblName.Location = new System.Drawing.Point(12, 127);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(48, 18);
             this.lblName.TabIndex = 2;
@@ -380,7 +321,7 @@
             // pbAvatar
             // 
             this.pbAvatar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pbAvatar.Location = new System.Drawing.Point(33, 35);
+            this.pbAvatar.Location = new System.Drawing.Point(20, 19);
             this.pbAvatar.Name = "pbAvatar";
             this.pbAvatar.Radius = 90;
             this.pbAvatar.Size = new System.Drawing.Size(90, 90);
@@ -397,28 +338,18 @@
             this.dcAvatarCircle.CircleTopColor = System.Drawing.Color.Teal;
             this.dcAvatarCircle.ForeColor = System.Drawing.Color.White;
             this.dcAvatarCircle.GradientValue = 90F;
-            this.dcAvatarCircle.Location = new System.Drawing.Point(20, 22);
+            this.dcAvatarCircle.Location = new System.Drawing.Point(8, 6);
             this.dcAvatarCircle.Name = "dcAvatarCircle";
             this.dcAvatarCircle.Size = new System.Drawing.Size(115, 118);
             this.dcAvatarCircle.TabIndex = 0;
             this.dcAvatarCircle.Text = "darkCircle1";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(304, 317);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 13);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "Stigma";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
-            this.ClientSize = new System.Drawing.Size(559, 339);
+            this.ClientSize = new System.Drawing.Size(435, 202);
             this.Controls.Add(this.plMain);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -433,9 +364,9 @@
             this.plMain.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbBlueEssence)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRP)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSeperator)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAvatar)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -447,14 +378,10 @@
         private ClassicDarkTheme.Dark.DarkLabel lblLevel;
         private ClassicDarkTheme.Dark.DarkLabel lblName;
         private ClassicDarkTheme.Dark.DarkPicturebox pbAvatar;
-        private System.Windows.Forms.PictureBox pbSeperator;
-        private ClassicDarkTheme.Dark.DarkCheckbox cbAutoAramSkinBoost;
-        private ClassicDarkTheme.Dark.DarkLabel lblAutoAramSkinBoost;
         private ClassicDarkTheme.Dark.DarkCheckbox cbAutoAccept;
         private ClassicDarkTheme.Dark.DarkLabel lblAutoAccept;
         private ClassicDarkTheme.Dark.DarkButton ChangeProfileIcon;
         private AmongUsExternal.DarkTextbox tbProfileIcon;
-        private ClassicDarkTheme.Dark.DarkButton btnAramSkinBoost;
         private ClassicDarkTheme.Dark.DarkLabel lblLevelText;
         private ClassicDarkTheme.Dark.DarkLabel lblBlueEssence;
         private ClassicDarkTheme.Dark.DarkLabel lblRP;

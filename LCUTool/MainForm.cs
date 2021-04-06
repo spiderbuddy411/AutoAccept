@@ -7,8 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using LCUAPI.API.Models;
 using System.Net;
 using RestSharp;
@@ -71,9 +69,9 @@ namespace LCUTool
             Environment.Exit(0);
         }
 
-        private static bool AutoAccept = false;
+        private static bool AutoAccept = true;
         private static bool AutoSkinBoost = false;
-        private static bool autoSkinDo = false;
+       private static bool autoSkinDo = false;
         string phase = string.Empty;
 
         private void LCUTimer_Tick(object sender, EventArgs e)
@@ -149,10 +147,10 @@ namespace LCUTool
             AutoAccept = cbAutoAccept.Checked;
         }
 
-        private void cbAutoAramSkinBoost_CheckedChanged(object sender, EventArgs e)
+       /* private void cbAutoAramSkinBoost_CheckedChanged(object sender, EventArgs e)
         {
             AutoSkinBoost = cbAutoAramSkinBoost.Checked;
-        }
+        }*/
 
         private void btnAramSkinBoost_Click(object sender, EventArgs e)
         {
@@ -208,6 +206,16 @@ namespace LCUTool
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void plMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblLevelText_Click(object sender, EventArgs e)
         {
 
         }

@@ -12,3 +12,17 @@ C:\Users\Stigma\Desktop\LCUTool\LCUTool\bin\Release\RestSharp.xml
 C:\Users\Stigma\Desktop\LCUTool\LCUTool\obj\Release\LCUTool.csprojAssemblyReference.cache
 C:\Users\Stigma\Desktop\LCUTool\LCUTool\obj\Release\LCUTool.csproj.Fody.CopyLocal.cache
 C:\Users\Stigma\Desktop\LCUTool\LCUTool\obj\Release\LCUTool.csproj.CopyComplete
+D:\AutoAccept-Skin-Booster-ARAM-main\AutoAccept-Skin-Booster-ARAM-main\LCUTool\bin\Release\LCUTool.exe.config
+D:\AutoAccept-Skin-Booster-ARAM-main\AutoAccept-Skin-Booster-ARAM-main\LCUTool\bin\Release\LCUTool.exe
+D:\AutoAccept-Skin-Booster-ARAM-main\AutoAccept-Skin-Booster-ARAM-main\LCUTool\bin\Release\LCUTool.pdb
+D:\AutoAccept-Skin-Booster-ARAM-main\AutoAccept-Skin-Booster-ARAM-main\LCUTool\bin\Release\Newtonsoft.Json.xml
+D:\AutoAccept-Skin-Booster-ARAM-main\AutoAccept-Skin-Booster-ARAM-main\LCUTool\bin\Release\RestSharp.xml
+D:\AutoAccept-Skin-Booster-ARAM-main\AutoAccept-Skin-Booster-ARAM-main\LCUTool\obj\Release\LCUTool.csprojAssemblyReference.cache
+D:\AutoAccept-Skin-Booster-ARAM-main\AutoAccept-Skin-Booster-ARAM-main\LCUTool\obj\Release\LCUTool.MainForm.resources
+D:\AutoAccept-Skin-Booster-ARAM-main\AutoAccept-Skin-Booster-ARAM-main\LCUTool\obj\Release\LCUTool.Properties.Resources.resources
+D:\AutoAccept-Skin-Booster-ARAM-main\AutoAccept-Skin-Booster-ARAM-main\LCUTool\obj\Release\LCUTool.csproj.GenerateResource.cache
+D:\AutoAccept-Skin-Booster-ARAM-main\AutoAccept-Skin-Booster-ARAM-main\LCUTool\obj\Release\LCUTool.csproj.CoreCompileInputs.cache
+D:\AutoAccept-Skin-Booster-ARAM-main\AutoAccept-Skin-Booster-ARAM-main\LCUTool\obj\Release\LCUTool.csproj.Fody.CopyLocal.cache
+D:\AutoAccept-Skin-Booster-ARAM-main\AutoAccept-Skin-Booster-ARAM-main\LCUTool\obj\Release\LCUTool.csproj.CopyComplete
+D:\AutoAccept-Skin-Booster-ARAM-main\AutoAccept-Skin-Booster-ARAM-main\LCUTool\obj\Release\LCUTool.exe
+D:\AutoAccept-Skin-Booster-ARAM-main\AutoAccept-Skin-Booster-ARAM-main\LCUTool\obj\Release\LCUTool.pdb
